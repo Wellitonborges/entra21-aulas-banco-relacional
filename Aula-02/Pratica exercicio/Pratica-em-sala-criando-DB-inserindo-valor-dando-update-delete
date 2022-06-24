@@ -1,0 +1,43 @@
+create TABLE Entra21(
+id integer PRIMARY KEY AUTOINCREMENT UNIQUE,
+nome_curso text,
+qtdAulas integer,
+valor integer,
+professor text,
+duracao text
+);
+
+select * from Entra21;
+
+INSERT INTO Entra21 (
+                        nome_curso,
+                        qtdAulas,
+                        valor,
+                        professor,
+                        duracao
+                    )
+                    VALUES (
+                        "React",
+                        65,
+                        1755,
+                        "Libozop",
+                        68
+                    );
+                    
+SELECT *from Entra21
+where valor >1100
+and qtdAulas>60;
+
+
+
+UPDATE Entra21
+set 
+valor =(valor *2)
+where 
+valor >1800
+;
+
+SELECT * from Entra21;
+
+DELETE  FROM Entra21
+where valor<1600;

@@ -1,0 +1,183 @@
+INSERT INTO patient(
+name,
+birth,
+cpf,
+name_mother,
+name_father,
+address,
+genre
+)
+VALUES(
+"Jose de Amaral",
+"10-06-1999",
+"07665415832",
+"MArilia de aumeida",
+"Tião Capoeira",
+"Rua algostinho de freitas n°75",
+"Masculino"
+);
+
+SELECT * FROM patient;
+
+INSERT INTO patient(
+name,
+birth,
+cpf,
+name_mother,
+name_father,
+address,
+genre
+)
+VALUES(
+"Lucia avante",
+"11-07-2000",
+"07005415832",
+"Carol de aumeida",
+"Tião Capoeira",
+"Rua algostinho de freitas n°75",
+"Masculino"
+);
+
+INSERT INTO patient(
+name,
+birth,
+cpf,
+name_mother,
+name_father,
+address,
+genre
+)
+VALUES(
+"Valeria de Camargo",
+"10-06-1999",
+"10665415832",
+"Lucinda tão cavalcante",
+"Zé de Camargo",
+"Rua Frieda Gandorff n°01",
+"Feminino"
+);
+INSERT INTO doctor(
+name,
+birth_date,
+cpf,
+name_mother,
+name_father,
+address,
+genre,
+specialty,
+medical_license
+)
+VALUES(
+"Vlaudemir Correia",
+"01-01-1988",
+"12365415832",
+"Duda Da duds ",
+"Varlei Malaquis",
+"Rua algostinho de freitas n°75",
+"Masculino",
+"Cardiologista",
+"Licença Medica"
+);
+SELECT * FROM doctor;
+
+INSERT INTO doctor(
+ name,
+birth_date,
+cpf,
+name_mother,
+name_father,
+address,
+genre,
+specialty,
+medical_license
+)
+VALUES(
+"Flavia salvador",
+"50-09-1991",
+"1234254832",
+"Sonia Rosangela ",
+"Almir Generutt",
+"Rua Tres marias n°50",
+"Masculino",
+"Massoterapeuta",
+"Licença Medica2"
+);
+
+SELECT * FROM doctor;
+
+SELECT * FROM patient;
+
+
+
+INSERT INTO Appointment(
+Date,
+Hour,
+Anamnesis,
+Prescription,
+Certificate,
+Forwarding,
+Medical_Release,
+doctor_id,
+patient_id
+)
+VALUES(
+"29-06-2022",
+"22:30",
+"anamnesis",
+"Torcilax",
+"certificate",
+"Forwarding",
+"Medical release",
+2,
+1
+);
+
+SELECT * FROM Appointment;
+
+INSERT INTO Appointment(
+Date,
+Hour,
+Anamnesis,
+Prescription,
+Certificate,
+Forwarding,
+Medical_Release,
+doctor_id,
+patient_id
+)
+VALUES(
+"28-06-2022",
+"09:32",
+"anamnesis",
+"Cinegripe",
+"certificate",
+"Forwarding",
+"Medical release",
+3,
+2
+);
+
+INSERT INTO Appointment(
+Date,
+Hour,
+Anamnesis,
+Prescription,
+Certificate,
+Forwarding,
+Medical_Release,
+doctor_id,
+patient_id
+)
+VALUES(
+"27-06-2022",
+"10:05",
+"anamnesis",
+"Paracetamol",
+"certificate",
+"Forwarding",
+"Medical release",
+3,
+3
+);
+
+SELECT * FROM Appointment;
